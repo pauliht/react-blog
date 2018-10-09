@@ -32,27 +32,6 @@
     </Button>
 
   </Form>
-
-
-
-  <Media
-    className="mt-5"
-    id="post">
-
-    <Media body>
-      <Media heading>
-        {this.head}
-      </Media>
-      {this.post}
-    </Media>
-
-    <Button
-      id="delete-btn"
-      onClick={(e) => { this.deleteStore(); }}>
-      Delete Post
-    </Button>
-    
-  </Media>
-
+ 
 
 </Fragment>
