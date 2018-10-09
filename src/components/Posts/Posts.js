@@ -1,6 +1,6 @@
 @observer export default class Posts extends Component {
 
-  start(){
+  start(){  
     this.posts = this.stores.Blog.posts
   }
   remove(item){
