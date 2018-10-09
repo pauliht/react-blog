@@ -8,6 +8,8 @@
   "  MainMenu" : "components/MainMenu/MainMenu",
   "  Blog" : "components/Blog/Blog",
   "  Posts" : "components/Posts/Posts",
+  "  Post" : "components/Post/Post",
+
 
 
 
