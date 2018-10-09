@@ -30,7 +30,11 @@
       onClick={(e) => { this.savePost(); }}>
       Post
     </Button>
-
+{(this.showMessage) && (
+    <div>
+      Posted!
+    </div>
+)}
   </Form>
  
 

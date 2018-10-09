@@ -1,6 +1,7 @@
 import "./Blog.scss";
 @observer export default class Blog extends Component {
 
+  @observable showMessage = false;
   @observable postToSet = '';
   @observable headToSet = '';
 
@@ -17,6 +18,9 @@ import "./Blog.scss";
  
   savePost(){
     this.posts.push({head: this.headToSet, text: this.postToSet});
+    this.postToSet = '';
+    this.headToSet = '';
+    this.showMessage = true;
 }
 
   editTitel(e){
