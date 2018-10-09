@@ -6,8 +6,7 @@ import "./Blog.scss";
 
   start(){
     this.createStoreConnectedProperties({
-      head: '',
-      post: ''
+      posts: []
     });
   }
   checkForEnter(e){
@@ -17,8 +16,7 @@ import "./Blog.scss";
   }
  
   savePost(){
-  this.head = this.headToSet;
-  this.post = this.postToSet;
+    this.posts.push({head: this.headToSet, text: this.postToSet});
 }
 
   editTitel(e){
@@ -27,11 +25,6 @@ import "./Blog.scss";
 
   editText(e){
     this.postToSet = e.currentTarget.value;
-  }
-
-  deleteStore(){
-    delete this.store.post;
-    delete this.store.head;
   }
   
 }
