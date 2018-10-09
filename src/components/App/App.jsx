@@ -4,6 +4,8 @@
     <Container tag="main">
     <Route exact={true} path="/blog" component={Blog}></Route>
     <Route exact={true} path="/posts" component={Posts}></Route>
+    <Route path="/post/:id" component={Post}></Route>
+
 
 
 
