@@ -1,7 +1,11 @@
-export default class Posts extends Component {
+@observer export default class Posts extends Component {
 
-
-  function Test(props) {
-    return <h1> All posts {props.post} </h1>;
+  start(){
+    this.posts = this.stores.Blog.posts
   }
+  remove(item){
+    this.posts.splice(this.posts.indexOf(item), 1);
+  }
+
+
 }
